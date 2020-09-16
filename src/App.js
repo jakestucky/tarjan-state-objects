@@ -7,6 +7,8 @@ class App extends Component {
     cohortName: 'Tarjan',
     salutation: 'Hello',
     name: 'Jake',
+    whereILive: 'Coon Rapids',
+    pizzaTopping: 'Italian Sausage',
   };
 
   render() {
@@ -15,6 +17,11 @@ class App extends Component {
         <h1>{this.state.cohortName}Learns State ith Object</h1>
         <div>
           {this.state.salutation} my name is {this.state.name}
+          <ul>
+            <li>my name is {this.state.name} </li>
+            <li>I live in {this.state.whereILive}</li>
+            <li>My favorite pizza topping is {this.state.pizzaTopping}</li>
+          </ul>
         </div>
       </div>
     );
